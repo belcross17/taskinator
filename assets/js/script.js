@@ -7,7 +7,7 @@ var tasksCompletedEl = document.querySelector("#tasks-completed");
 
 var taskStatusChangeHandler = function (event) {
     var taskId =  event.target.getAttribute("data-task-id");
-    var statusValue = event.target.value.toLowercase();
+    var statusValue = event.target.value.toLowerCase();
     var taskSelected = document.querySelector(".task-item[data-task-id='" + taskId + "']");
 
     if(statusValue === "to do") {
