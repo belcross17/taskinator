@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!--Head section  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Taskinator</title>
+</head>
+<!-- End head section -->
+<!-- body section -->
+<body>
+    <!-- header section -->
+    <header>
+        <h1 class="page-title">Taskinator</h1>
+        <p>Click button below to add a new task!</p>
+        <!-- form and button section -->
+        <form id="task-form">
+            <div class="form-group">
+                <input type="text" name="task-name" placeholder="Enter Task Name" />
+            </div>
+            <div class="form-group">
+                <select class="select-dropdown" name="task-type">
+                    <option value="" disabled selected>Pick a task type</option>
+                    <option value="Print">Print</option>
+                    <option value="Web">Web</option>
+                    <option value="Mobile">Mobile</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn" id="save-task" type="submit">Add Task</button>
+            </div>
+        </form>
+        <!-- End form and button section -->
+    </header>
+    <!-- End header section -->
+<!-- Main Section -->
+    <main class="page-content" id="page-content">
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks To Do</h2>
+            <ul class="task-list" id="tasks-to-do"></ul>
+        </section>
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks In Progress</h2>
+            <ul class="task-list" id="tasks-in-progress"></ul>
+        </section>
+        <section class="task-list-wrapper">
+            <h2 class="list-title">Tasks Completed</h2>
+            <ul class="task-list" id="tasks-completed"></ul>
+        </section>
+    </main>
+<!-- End Main section -->
+
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+<!-- End body section -->
+
+<!-- Footer section -->
+<footer>
+    &copy;2020 by Taskinator
+</footer>
+<!-- End footer section -->
+
+</html>
